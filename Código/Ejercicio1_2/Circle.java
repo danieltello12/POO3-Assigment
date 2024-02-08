@@ -1,14 +1,18 @@
 package Ejercicio1_2;
 
 public class Circle {
-    double radius=1.0;
-    public void circle(){
-    }
-    public void circle(Double radio){
-        radius=radio;
+     private double radius=1.0;
+     private String color= "Red";
+    public Circle(){
+        Circle c1= new Circle();
 
     }
+    public Circle(Double radio){
+        this.radius=radio;
+        Circle c1= new Circle();
+    }
     public double getRadio(){
+
         return radius;
     }
     public void setRadio(Double radio){
@@ -16,17 +20,18 @@ public class Circle {
 
     }
     public double getArea(){
-        double x=0.2;
-        return x;
+        double area;
+        area= (Math.PI)*radius*radius;
+        return area;
     }
     public double getCircunferencia(){
-        double x=0.2;
-        return x;
+        double perimetro;
+        perimetro=2*(Math.PI)*radius;
+        return perimetro;
 
     }
     public String toString(){
-        String x= "HOla";
-        return x;
-
+        Circle c1= new Circle();
+        return "Hola";
     }
 }

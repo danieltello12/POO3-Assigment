@@ -1,5 +1,5 @@
 package Ejercicio1_2;
-
+////<bcj<vxvjkz
 public class Circle {
     double radius=1.0;
     public void circle(){

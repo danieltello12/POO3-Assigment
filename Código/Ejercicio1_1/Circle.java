@@ -38,8 +38,13 @@ public class Circle {
     }
 
     public void setRadius(double newRadius){
+
         radius=newRadius;
     }
+    public void setColor(String newColor){
+        color=newColor;
+    }
+
 
     public String toString() {
         return "Circle[radius=" + radius + " color=" + color + "]";

@@ -1,22 +1,22 @@
+
 package Ejercicio1_2;
 ////<bcj<vxvjkz
-public class Circle {
-     private double radius=1.0;
-     private String color= "Red";
-    public Circle(){
-        Circle c1= new Circle();
+public class Circle2 {
+    private double radius;
+    public  Circle2(){
+        radius=1.0;
 
     }
-    public Circle(Double radio){
+    public Circle2(Double radio){
         this.radius=radio;
-        Circle c1= new Circle();
+
     }
     public double getRadio(){
 
         return radius;
     }
     public void setRadio(Double radio){
-        radius=radio;
+        this.radius=radio;
 
     }
     public double getArea(){
@@ -30,8 +30,7 @@ public class Circle {
         return perimetro;
 
     }
-    public String toString(){
-        Circle c1= new Circle();
-        return "Hola";
+    public String toString() {
+        return "Circle[radius:"+radius+"]";
     }
 }

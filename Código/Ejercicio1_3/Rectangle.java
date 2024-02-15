@@ -34,10 +34,12 @@ public class Rectangle {
     }
 
     public double getPerimetrer(){
+
         return length*4;
     }
 
     public String toString() {
+
         return "Rectángulo[altura=" + length + " anchura=" + width + "]";
     }
 }

@@ -5,7 +5,7 @@ public class Circle {
     private double radius;
     private String color;
 
-    private  double pi=3.1416;
+
 
     public Circle(){//Primer constructor
         radius=1.5;
@@ -34,7 +34,7 @@ public class Circle {
 
     public double getArea(){
 
-        return radius*radius*pi;
+        return radius*radius*Math.PI;
     }
 
     public void setRadius(double newRadius){

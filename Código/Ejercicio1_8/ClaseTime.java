@@ -72,7 +72,7 @@ public class ClaseTime {
                 }
             }
         }
-            return new ClaseTime(hour,minute,second);
+            return this;
 
     }
     public ClaseTime previusSecond(){
@@ -88,6 +88,6 @@ public class ClaseTime {
                 }
             }
         }
-        return new ClaseTime(hour,minute,second);
+        return this;
     }
 }

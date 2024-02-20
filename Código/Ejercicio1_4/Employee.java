@@ -21,7 +21,7 @@ public class Employee{
         return segundoNombre;
     }
     public String getName(){
-        return primerNombre+segundoNombre;
+        return primerNombre+" "+segundoNombre;
     }
     public int getSalary(){
         return Salary;
@@ -38,7 +38,7 @@ public class Employee{
         return Salary;
     }
     public String toString(){
-        return "Employee[id="+id+",name="+primerNombre+segundoNombre+",salary="+Salary+"]";
+        return "Employee[id="+id+",name="+primerNombre+" "+segundoNombre+",salary="+Salary+"]";
     }
 
 

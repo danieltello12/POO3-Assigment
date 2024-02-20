@@ -24,7 +24,7 @@ public class ClaseBall {
     }
 
     public void setX(float newX){
-        x=newX;
+        this.x=newX;
     }
 
     public void setRadius(int radius) {
@@ -36,7 +36,7 @@ public class ClaseBall {
     }
 
     public void setY(float newY){
-        y=newY;
+        this.y=newY;
     }
 
     public int getRadius() {
@@ -55,21 +55,20 @@ public class ClaseBall {
         this.yDelta = yDelta;
     }
     public void move(){
-        x+=xDelta;
-        y+=yDelta;
+        this.x+=xDelta;
+        this.y+=yDelta;
     }
     public void reflectHorizontal(){
-        xDelta=-xDelta;
-
-
+        this.xDelta=-xDelta;
 
     }
     public void reflectVertical(){
-        yDelta=-yDelta;
+        this.yDelta=-yDelta;
 
     }
     public String toString(){
-        return "Ball[("+x+","+y+" speed= "+xDelta+","+yDelta+"]";
+
+        return "Ball[("+x+","+y+"),speed=("+xDelta+","+yDelta+")]";
 
     }
 }

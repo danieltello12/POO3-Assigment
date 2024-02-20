@@ -18,24 +18,25 @@ public class Rectangle {
         return length;
     }
     public void setLength(float newlength){
-        length=newlength;
+        this.length=newlength;
 
     }
     public float getWidth(){
         return width;
     }
     public void setWidth(float newWidth){
-        width=newWidth;
+        this.width=newWidth;
 
     }
 
     public double getArea(){
-        return length*length;
+        double area= length*width;
+        return area;
     }
 
     public double getPerimetrer(){
 
-        return length*4;
+        return (length*2)+(width*2);
     }
 
     public String toString() {

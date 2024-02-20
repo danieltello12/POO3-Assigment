@@ -38,7 +38,7 @@ public class Account {
     }
     public int transferTo(Account another, int amount){
         if(amount<=Balances){
-            another.Balances=amount;
+            another.Balances= another.Balances+amount;
             this.Balances=(Balances-amount);
         }
         else{

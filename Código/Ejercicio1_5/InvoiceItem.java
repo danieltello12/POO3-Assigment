@@ -24,7 +24,7 @@ public class InvoiceItem {
     }
 
     public void setQty(int newqty){
-        qty=newqty;
+        this.qty=newqty;
 
     }
 
@@ -33,7 +33,7 @@ public class InvoiceItem {
         return unitPrice;
     }
     public void setUnitPrice(double newUnitPrice){
-        unitPrice=newUnitPrice;
+        this.unitPrice=newUnitPrice;
     }
 
     public double getTotal(){
@@ -42,6 +42,6 @@ public class InvoiceItem {
 
     public String toString(){
 
-        return "InvoiceItem[id=" + id + " desc=" + desc + "unit price=" +unitPrice+"]";
+        return "InvoiceItem[id=" + id + " desc=" + desc + " qty="+ qty + " unit price=" +unitPrice+"]";
     }
 }

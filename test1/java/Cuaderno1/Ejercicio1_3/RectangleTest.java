@@ -38,9 +38,9 @@ class RectangleTest {
     @Test
     void getArea() {
         Rectangle miOBjeto= new Rectangle();
-        double x=miOBjeto.getLength();
-        double y= miOBjeto.getWidth();
-        double area=x*y;
+         float x=miOBjeto.getLength();
+        float y= miOBjeto.getWidth();
+        float area=x*y;
         assertEquals(area,miOBjeto.getArea(),"Ha calculado mal el area");
     }
 

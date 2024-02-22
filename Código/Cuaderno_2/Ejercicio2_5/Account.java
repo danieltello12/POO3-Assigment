@@ -20,22 +20,31 @@ public class Account {
         return id;
     }
     public String toString() {
-        return "Customer{" +
-                "nombre=" + custumer.getName() +
-                ", balance='" + balance + '\'' +
+        return "{" +
+                custumer + '\'' + "balance=" + String.format("%.2f", balance)+
                 '}';
+
     }
 
     public Customer getCostumer() {
         return custumer;
     }
 
+
     public double getBalance() {
         return balance;
+    }
+
+    public String getCostumerName(){
+        return custumer.getName();
     }
     public Account deposit(double cantidad){
         this.balance=cantidad+balance;
         return this;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
     }
 
     public Account withdraw(double cantidad){
@@ -47,6 +56,7 @@ public class Account {
             System.out.println("La cantidad supera el balance");
         }
         return this;
+
 
     }
 }

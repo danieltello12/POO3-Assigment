@@ -34,9 +34,8 @@ public class Mypoint {
         return duplacoordenadas;
     }
     public void setXY(int x, int y){
-        int[] duplacoordenadas = new int[2];
-        duplacoordenadas[0]=x;
-        duplacoordenadas[1]=y;
+        this.x=x;
+        this.y=y;
     }public String toString(){
         return("("+this.x+","+this.y+")");
     }

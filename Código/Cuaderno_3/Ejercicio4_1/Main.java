@@ -1,4 +1,4 @@
-package Cuaderno_4.Ejercicio4_1;
+package Cuaderno_3.Ejercicio4_1;
 
 public class Main {
     public static void main(String[] args) {

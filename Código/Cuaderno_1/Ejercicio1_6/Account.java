@@ -1,9 +1,9 @@
 package Cuaderno_1.Ejercicio1_6;
 
 public class Account {
-    String id;
-    String Name;
-    int Balances=0;
+    private String id;
+    private String Name;
+    private  int Balances=0;
     public Account(String id, String Name){
         this.id=id;
         this.Name=Name;

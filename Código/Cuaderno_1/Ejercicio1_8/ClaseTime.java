@@ -1,9 +1,9 @@
 package Cuaderno_1.Ejercicio1_8;
 
 public class ClaseTime {
-    int hour;
-    int minute;
-    int second;
+    private  int hour;
+    private  int minute;
+    private  int second;
 
     public ClaseTime(int hour, int minute, int second) {
         this.hour = hour;

@@ -1,9 +1,9 @@
 package Cuaderno_2.Ejercicio2_4;
 
 public class Customer {
-    int id;
-    String name;
-    int discount;
+    private int id;
+    private String name;
+    private int discount;
 
     public Customer(int id, String name, int discount) {
         this.id = id;

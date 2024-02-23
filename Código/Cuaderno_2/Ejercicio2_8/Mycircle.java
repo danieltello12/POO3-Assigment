@@ -1,8 +1,8 @@
 package Cuaderno_2.Ejercicio2_8;
 
 public class Mycircle {
-    Mypoint centro= new Mypoint(0,0);
-    int radio=0;
+    private Mypoint centro= new Mypoint(0,0);
+    private int radio=0;
 
     public Mycircle() {
     }

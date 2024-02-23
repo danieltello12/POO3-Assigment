@@ -1,9 +1,9 @@
 package Cuaderno_2.Ejercicio2_9;
 
 public class MyTriangle {
-    Mypoint v1;
-    Mypoint v2;
-    Mypoint v3;
+    private Mypoint v1;
+    private Mypoint v2;
+    private Mypoint v3;
 
     public MyTriangle(Mypoint v1, Mypoint v2, Mypoint v3) {
         this.v1 = v1;

@@ -1,9 +1,9 @@
 package Cuaderno_2.Ejercicio2_4;
 
 public class Invoice {
-    int id;
-    Customer customer;
-    double amount;
+    private int id;
+    private Customer customer;
+    private double amount;
 
     public Invoice(int id, Customer customer, double amount) {
         this.id = id;
@@ -40,8 +40,8 @@ public class Invoice {
         return this.customer.getDiscount();
     }
     public double getAmountAfterDiscount(){
-        int x=this.customer.discount;
-        double fin=x-(x*(x/100));
+        int x=this.customer.getDiscount();
+        double fin=this.amount-(this.amount*(x/100));
         return fin;
     }
     public String toString(){

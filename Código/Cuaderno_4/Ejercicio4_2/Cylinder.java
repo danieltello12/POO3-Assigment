@@ -1,4 +1,4 @@
-package Cuaderno_3.Ejercicio4_2;
+package Cuaderno_4.Ejercicio4_2;
 
 public class Cylinder {
     private Circle base;

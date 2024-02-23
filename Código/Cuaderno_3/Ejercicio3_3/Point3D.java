@@ -34,7 +34,7 @@ public class Point3D extends Point2D{
 
     @Override
         public String toString() { // in Cylinder class
-            return "Point3D: Las coordenadas son: " + super.toString() // use Circle's toString()
+            return "Point3D: " + super.toString() // use Circle's toString()
                     + " z=" + z;
         }
 }

@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AccountTest {
-
+Account a= new Account("333","Lucia");
     @Test
     void getId() {
         Account miObjeto= new Account("34","Dani",5);

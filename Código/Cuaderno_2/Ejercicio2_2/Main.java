@@ -9,5 +9,6 @@ public class Main {
 // Declare and allocate a Book instance
         Book javaDummy = new Book("Java for Dummy", authors, 19.99, 99);
         System.out.println(javaDummy); // toString()
+        System.out.println(javaDummy.getAuthorsNames());
     }
 }

@@ -24,14 +24,14 @@ public class MyTriangle {
     public double getPerimeter(){
         double lado1= this.v1.distancia(v2);
         double lado2=this.v2.distancia(v3);
-        double lado3=this.v2.distancia(v3);
+        double lado3=this.v1.distancia(v3);
         return lado1+lado2+lado3;
     }
     public String getType(){
         double lado1= this.v1.distancia(v2);
         double lado2=this.v2.distancia(v3);
-        double lado3=this.v2.distancia(v3);
-        if(lado1==lado2 && lado2==lado3){
+        double lado3=this.v1.distancia(v3);
+        if(lado1==lado2 && lado2==lado3 ){
             return "Equilatero";
         } else if (lado1==lado2  || lado1==lado3 || lado2==lado3 ) {
             return "Isosceles";

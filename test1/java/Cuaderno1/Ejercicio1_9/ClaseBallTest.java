@@ -36,8 +36,8 @@ class ClaseBallTest {
     @Test
     void setxDelta() {
         ClaseBall miObjeto=new ClaseBall(1,5,3,45,6);
-        assertDoesNotThrow(()->miObjeto.setRadius(8));
-        assertEquals(8,miObjeto.getRadius(),"Ha puesto mal el radio");
+        assertDoesNotThrow(()->miObjeto.setxDelta(8));
+        assertEquals(8,miObjeto.getXDelta(),"Ha puesto mal el radio");
     }
 
     @Test

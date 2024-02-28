@@ -5,7 +5,7 @@ import java.sql.SQLOutput;
 public class Main {
     public static void main(String[] args) {
         //Clase customer
-        Customer miObjeto=new Customer(456,"Paco",20);
+        Customer miObjeto=new Customer(456,"Paco",'h');
 
 
         //Clase account

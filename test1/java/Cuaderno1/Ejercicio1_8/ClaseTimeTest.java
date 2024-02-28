@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ClaseTimeTest {
-
     @Test
     void getHour() {
         ClaseTime miObjeto= new ClaseTime(2,50,30);
@@ -61,12 +60,17 @@ class ClaseTimeTest {
         ClaseTime miObjeto= new ClaseTime(2,50,30);
         String salidaEsperada="02:50:30";
         assertEquals(salidaEsperada,miObjeto.toString(),"No sale el mismo texto en toString");
+        ClaseTime nuevo= new ClaseTime(15,5,3);
+        String nueva= "15:05:03";
+        assertEquals(nueva,nuevo.toString());
     }
 
     @Test
     void nextSecond() {
         ClaseTime miObjeto= new ClaseTime(2,50,30);
         assertDoesNotThrow(()->miObjeto.nextSecond());
+        ClaseTime t1= new ClaseTime(23,59,59);
+        assertDoesNotThrow(()->t1.nextSecond());
         assertEquals(31,miObjeto.getSecond(),"Ha sacado mal el siguiente segundo");
 
     }
@@ -75,6 +79,8 @@ class ClaseTimeTest {
     void previusSecond() {
         ClaseTime miObjeto= new ClaseTime(2,50,30);
         assertDoesNotThrow(()->miObjeto.previusSecond());
+        ClaseTime t1= new ClaseTime(0,0,0);
+        assertDoesNotThrow(()->t1.previusSecond());
         assertEquals(29,miObjeto.getSecond(),"Ha sacado mal el segundo anterior");
     }
 }

@@ -5,7 +5,9 @@ import Cuaderno_1.Ejercicio1_1.Circle;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CircleTest {
-
+Circle c= new Circle(5);
+Circle c3= new Circle();
+Circle c4= new Circle(4,"rojo");
     @org.junit.jupiter.api.Test
     void getRadius() {
         Circle miObjeto=new Circle(3d);

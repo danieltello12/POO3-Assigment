@@ -32,5 +32,11 @@ package Cuaderno_3.Ejercicio4_1;
             this.x=x;
             this.y=y;
         }
+        public float[] getXY(){
+            float[] duplacoordenadas = new float[2];
+            duplacoordenadas[0]=this.x;
+            duplacoordenadas[1]=this.y;
+            return duplacoordenadas;
+        }
     }
 

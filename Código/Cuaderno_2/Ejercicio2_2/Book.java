@@ -45,9 +45,9 @@ public class Book {
     public String toString(){
         int i=0;
         Author[] autores=getAutores();
-        String cadena ="";
-        for (;i< autores.length-1;i++){
-            cadena+="Author="+autores[i].toString();
+        StringBuilder cadena = new StringBuilder();
+        for (;i< autores.length;i++){
+            cadena.append(autores[i].toString());
 
         }
         return("Book[name="+name+", authors={"+cadena+"}, price="+price+", qty="+qty+"]");
@@ -55,12 +55,12 @@ public class Book {
     public String getAuthorsNames(){
         int i=0;
         Author[] autores=getAutores();
-        String cadena = null;
-        for (;i< autores.length-2;i++){
-            cadena+=autores[i].getName()+",";
+        StringBuilder cadena = new StringBuilder();
+        for (;i< autores.length-1;i++){
+            cadena.append(autores[i].getName()).append(",");
         }
-        cadena+=autores[i+1];
-        return cadena;
+        cadena.append(autores[i].getName());
+        return cadena.toString();
     }
 }
 

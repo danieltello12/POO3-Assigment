@@ -14,5 +14,6 @@ public class Main {
         System.out.println("Otras nuevas coordenadas después de los setters son: "+miObjeto);
         System.out.println("Mis coordenadas XY son:"+"("+miObjeto.getXY()[0]+","+miObjeto.getXY()[1]+")");
         System.out.println("Mi coordenada Z es: "+miObjeto.getXYZ()[2]);
+        System.out.println(miObjeto);
     }
 }

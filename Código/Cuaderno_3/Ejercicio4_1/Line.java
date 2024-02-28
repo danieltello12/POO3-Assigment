@@ -68,13 +68,13 @@ public class Line {
     }
 
     public double getLength() {
-        double x=begin.getX()-end.getX();
-        double y=begin.getX()-end.getY();
-        return Math.sqrt(x*x+y*y);
+        double x=end.getX()-begin.getX();
+        double y=end.getX()-begin.getY();
+        return Math.sqrt((x*x)+(y*y));
     }
     public double getGradient() {
-        double xdiff=begin.getX()-end.getX();
-        double ydiff=begin.getX()-end.getY();
+        double xdiff=end.getX()-begin.getX();
+        double ydiff=end.getX()-begin.getY();
         return Math.atan2(xdiff,ydiff);
     }
 }

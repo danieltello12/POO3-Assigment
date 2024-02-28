@@ -9,5 +9,7 @@ public class main {
         System.out.println("El Area del rectangulo es: "+ o1.getArea());
         System.out.println("El perimetro del circulo es: "+ o2.getPerimeter());
         System.out.println("El Area del circulo es: "+ o2.getArea());
+        System.out.println(o2);
+        System.out.println(o1);
     }
 }

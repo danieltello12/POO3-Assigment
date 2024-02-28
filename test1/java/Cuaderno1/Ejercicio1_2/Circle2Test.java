@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class Circle2Test {
+    Circle2 c= new Circle2();
 
     @Test
     void getRadio() {

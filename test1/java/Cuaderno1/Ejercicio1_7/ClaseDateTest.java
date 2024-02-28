@@ -42,8 +42,8 @@ class ClaseDateTest {
     @Test
     void setYear() {
         ClaseDate miObjeto=new ClaseDate(2,6,1935);
-        assertDoesNotThrow(()->miObjeto.setMonth(1956));
-        assertEquals(1956,miObjeto.getMonth(),"Ha colocado mal el año");
+        assertDoesNotThrow(()->miObjeto.setYear(1956));
+        assertEquals(1956,miObjeto.getYear(),"Ha colocado mal el año");
 
     }
 
@@ -63,5 +63,9 @@ class ClaseDateTest {
         ClaseDate miObjeto=new ClaseDate(2,6,1935);
        String salidaEsperada="02/06/1935";
         assertEquals(salidaEsperada,miObjeto.toString(),"No sale el mismo texto en toString");
+    ClaseDate c= new ClaseDate(40,50,5);
+        String salidaEsperada2="40/50/05";
+        assertEquals(salidaEsperada2,c.toString(),"No sale el mismo texto en toString");
+
     }
 }

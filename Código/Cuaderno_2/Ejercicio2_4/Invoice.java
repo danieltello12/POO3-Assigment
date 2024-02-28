@@ -41,7 +41,7 @@ public class Invoice {
     }
     public double getAmountAfterDiscount(){
         int x=this.customer.getDiscount();
-        double fin=this.amount-(this.amount*(x/100));
+        double fin=this.amount-(this.amount*((double) x /100));
         return fin;
     }
     public String toString(){

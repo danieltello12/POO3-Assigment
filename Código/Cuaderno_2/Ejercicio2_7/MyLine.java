@@ -50,7 +50,7 @@ public class MyLine {
         this.end.setX(x);
     }
     public void setEndY(int y){
-        this.end.setX(y);
+        this.end.setY(y);
     }
     public int[] getBeginXY(){
         return this.begin.getXY();

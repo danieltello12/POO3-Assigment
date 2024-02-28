@@ -45,7 +45,7 @@ public class Rectangle extends Shape1 {
     }
     @Override
     public double getPerimeter(){
-        return this.length*2+this.width*2;
+        return ((this.length*2)+(this.width*2));
     }
     @Override
 

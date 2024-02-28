@@ -15,6 +15,7 @@ public class main {
         System.out.println("Circulo");
 
         Movable c1= new MovableCircle(4,3,8,7,6);
+        System.out.println(c1);
         c1.MoveDown();
         System.out.println("Nuevas coordenadas"+ c1.toString());
         c1.MoveUP();

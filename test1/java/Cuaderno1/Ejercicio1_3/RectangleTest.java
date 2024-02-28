@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class RectangleTest {
+    Rectangle r= new Rectangle();
+    Rectangle r2= new Rectangle(4,5);
 
     @Test
     void getLength() {

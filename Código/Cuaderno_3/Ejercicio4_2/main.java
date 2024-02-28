@@ -22,7 +22,8 @@ public class main {
                 + " base area=" + c3.getBase().getArea()
                 + " volume=" + c3.getVolumen());
 
-
+System.out.println(base);
+System.out.println(c3);
     }
 
     }

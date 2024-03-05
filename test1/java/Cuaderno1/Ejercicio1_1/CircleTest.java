@@ -18,6 +18,7 @@ Circle c4= new Circle(4,"rojo");
 
     @org.junit.jupiter.api.Test
     void getColor() {
+        assertEquals("rojo",c4.getColor());
     }
 
     @org.junit.jupiter.api.Test
